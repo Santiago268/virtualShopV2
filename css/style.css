@@ -104,7 +104,7 @@ img{
     margin-bottom: 2.5rem;
 }
 
-.producto p{
+.contenido-producto-main p{
     font-family: var(--mainFont);
     text-align: center;
     margin: 1rem 0;
@@ -171,14 +171,16 @@ img{
 }
 
 /* Producto */
-.contenido-producto{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    column-gap: 2rem;
+.imagen-producto{
+    width: 100%;
 }
 
-.imagen-producto{
-    margin: 0 auto;
+@media (min-width: 768px) {
+    .contenido-producto{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 2rem;
+    }
 }
 
 .texto-producto{
