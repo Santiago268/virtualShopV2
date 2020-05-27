@@ -28,6 +28,12 @@ h1{
     margin: 1rem 0 0 0;
 }
 
+p{
+    font-size: 1.8rem;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+}
+
 img{
     max-width: 100%;
 }
@@ -131,3 +137,25 @@ img{
     }
 }
 
+/* Footer */
+.footer-site{
+    background-color: var(--darkMain);
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.copyright{
+    font-family: var(--mainFont);
+    color: white;
+}
+
+/* About Us */ 
+
+
+@media (min-width: 768px) {
+    .contenido-informacion{
+        display: grid;
+        grid-template-columns: 4fr 3fr;
+        column-gap: 2rem;
+    }
+}
