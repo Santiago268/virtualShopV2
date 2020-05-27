@@ -21,6 +21,16 @@ body{
     font-size: 2rem;
 }
 
+body .footer-fijo{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+body .footer-fijo main{
+    flex:1;
+}
+
 h1{
     color: var(--secondary);
     text-align: center;
@@ -138,9 +148,10 @@ img{
 }
 
 /* Footer */
-.footer-site{
+.footer-site p{
     background-color: var(--darkMain);
-    padding: 1rem 0;
+    padding: 1.5rem 0;
+    font-size: 2.2rem;
     text-align: center;
 }
 
@@ -150,12 +161,66 @@ img{
 }
 
 /* About Us */ 
-
-
 @media (min-width: 768px) {
     .contenido-informacion{
         display: grid;
         grid-template-columns: 4fr 3fr;
         column-gap: 2rem;
     }
+}
+
+/* Producto */
+.contenido-producto{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 2rem;
+}
+
+.imagen-producto{
+    margin: 0 auto;
+}
+
+.texto-producto{
+    text-align: center;
+}
+
+.formulario-pedido{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 6rem);
+    grid-gap: 1rem;
+}
+
+::placeholder{
+    color: white;
+}
+
+.campo{
+    background-color: transparent;
+    border: 5px solid white;
+    font-family: var(--mainFont);
+    font-size: 3rem;
+    padding: 1rem;
+    width: 100%;
+    color: white;
+}
+
+.talla{
+    -webkit-appearance: none;
+    -webkit-border-radius: 0px;
+    grid-column: 1 / 3;
+}
+
+.boton{
+    background-color: var(--secondary);
+    font-size: 2rem;
+    font-family: var(--mainFont);
+    border: none;
+    transition: background-color .3s ease-in-out;
+    grid-column: 1 / 4;
+}
+
+.boton:hover{
+    cursor: pointer;
+    background-color: rgb(233, 187, 2);
 }
